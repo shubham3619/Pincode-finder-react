@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pincode-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 100px;
+}
+
+.pincode-form input[type="text"] {
+    width: 200px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; 
+    color: #333; 
+    width: 60%;
+  }
+  
+
+  .pincode-form input[type="text"]:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+  }
+
+.pincode-form input[type="text"]:hover {
+    border-color: lightblue; 
+  }
+
+  .pincode-form button {
+    background-color: dodgerblue; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 60%;
+  }
+  
+
+  .pincode-form button:hover {
+    background-color: deepskyblue;
+  }
+
+  .error {
+    color :red;
+    font-weight: 700;
+  }
+
+
+  /* Loader */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  
+  /* Styles for the loader */
+  .loader {
+    border: 10px solid #f3f3f3; /* Light grey border */
+    border-top: 10px solid #3498db; /* Blue border on top */
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    animation: spin 1s linear infinite; /* Apply rotation animation */
+  }
+  
+  /* Keyframes for the spin animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Start position */
+    100% { transform: rotate(360deg); } /* End position */
+  }
+
+
+.pincode-list {
+    margin: 30px;
+}
+  .pincode-list h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the subheadings */
+  .pincode-list h2 {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the input field */
+  .pincode-list input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the unordered list */
+  .pincode-list ul {
+    list-style: none;
+    padding: 0px 20px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Responsive grid columns */
+    grid-gap: 20px; /* Gap between grid items */
+  }
+  
+  /* Styles for list items */
+  .pincode-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .no-data {
+    color: rgb(255, 47, 0);
+    text-align: center;
+    height: 300px;
+    font-weight: 700;
+  }
